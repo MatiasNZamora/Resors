@@ -1,0 +1,106 @@
+body {
+        --primary: 25,91,255;
+        --color: 44, 62, 80;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        background: #f4f7f8;
+        overflow: hidden;
+        color: rgb(var(--color));
+        width: 100vw;
+    }
+    * {
+        list-style: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+    .btn {
+        position: absolute;
+        margin: 0px 20px;
+        z-index: 10;
+        border: 0px;
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+        background: rgba(255,255,255,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #000;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+    .next {
+        right: 0px;
+    }
+    .con-slide {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        left: 0px;
+        position: relative;
+    }
+    /* .con-images {
+    } */
+    .con-img {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .con-img .con-text {
+        font-size: 6rem;
+        color: #fff;
+        background: #000;
+        padding: 15px 50px;
+        transform: skew(20deg);
+        mix-blend-mode: multiply;
+        border-radius: 20px;
+    }
+    .con-img .con-text:after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        border-radius: inherit;
+        border: 4px solid #000;
+        top: -14px;
+        left: -14px;
+    }
+    .con-img .con-text h3 {
+        transform: skew(-20deg);
+        text-transform: uppercase;
+    }
+    .con-img-0 {
+        background-image: url(https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/1.jpg);
+    }
+    .con-img-1 {
+        background-image: url(https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/2.jpg);
+    }
+    .con-img-2 {
+        background-image: url(https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/3.jpg);
+    }
+    .con-img-3 {
+        background-image: url(https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/4.jpg);
+    }
+    .con-img-4 {
+        background-image: url(https://raw.githubusercontent.com/luisDanielRoviraContreras/img/master/5.jpg);
+    }
+    .con-img img {
+        width: 100%;
+        min-height: 100vh;
+    }

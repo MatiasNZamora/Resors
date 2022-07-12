@@ -1,0 +1,84 @@
+body {
+    background: #F1F3F6;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100vh;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.copy {
+    width: 100%;
+    padding: 20px 40px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .3;
+    font-size: .75rem;
+    font-weight: 500;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+}
+.con-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 50px;
+}
+.con-uls {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.con-uls h5 {
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+    color: #000;
+}
+.con-uls ul {
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.con-uls li {
+    padding: 10px;
+    font-size: .85rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.45);
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.con-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.con-input input {
+    padding: 10px;
+    border: 0px;
+    background: #F1F3F6;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+}
+.con-input button {
+    outline: none;
+    padding: 10px;
+    border: 0px;
+    background: #000;
+    color: #fff;
+    border-radius: 0px 20px 20px 0px;
+    padding-right: 15px;
+}

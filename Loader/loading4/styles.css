@@ -1,0 +1,48 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+
+.loader {
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    bottom: -11rem;
+}
+
+.loader span {
+    mix-blend-mode: difference;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    height: calc(100% - 20px);
+    left: 0;
+    top: 10px;
+    width: 40%;
+    background-color: white;
+    z-index: -1;
+    color: black;
+    overflow: hidden;
+    animation: animate 4s infinite linear;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(250px);
+    }
+}

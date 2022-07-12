@@ -1,11 +1,11 @@
 let counter = 0;
-
 setInterval(() => {
-    const el = document.querySelector('.number');
-    const elvalue = Number(el.getAttribute('data-value'));
+    const el = document.querySelector('.number')
 
-    if (counter == elvalor) {
-        counter ++;
+    const elValue = Number(el.getAttribute('data-value'));
+
+    if (counter !== elValue) {
+        counter++;
         el.innerHTML = counter + "%"
     }
-},80)
+}, 80)
