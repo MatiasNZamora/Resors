@@ -1,0 +1,36 @@
+.progress-bar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    outline: 1px solid #eaeaea55;
+    outline-offset: -1px;
+}
+
+.progress-bar::after, .number {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-bar::after {
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: inherit;
+    outline: invert;
+}
+
+.circle {
+    stroke-dasharray: 418;
+    stroke-dashoffset: 418;
+    transform:rotate(-90deg);
+    animation:bar-fill 8s linear forwards;
+}
+
+@keyframes bar-fill {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

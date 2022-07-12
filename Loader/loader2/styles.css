@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d1e2c;
+}
+
+.spin-loading {
+    width: 70px;
+    height: 70px;
+    border: 6px solid #3FC1C936;
+    display: inline-block;
+    border-radius: 50%;
+    border-top-color:#Fc5185;
+    animation: 1.5s spin infinite ease-in-out;
+}
+
+.dot-loading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.dot-loading > div { 
+    height: 24px;
+    width: 24px;
+    background: #Fc5185;
+    border-radius: 50%;
+    animation: 1.5s bounce infinite ease-in-out;
+}
+
+.dot-loading .dot2 {
+    animation-delay: 150ms ;
+}
+
+.dot-loading .dot3 {
+    animation-delay: 150ms ;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+        background: #3fc1c9
+    }
+    40% {
+        background: #Fc5185;
+        transform: scale(1);
+    }
+}
